@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html,
@@ -10,7 +10,7 @@ body {
 }
 
 .container {
- /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: #17171a;
   display: flex;
   width: 100vw;
@@ -29,17 +29,13 @@ body {
 .l1 ul,
 .l2 ul {
   overflow-y: auto;
-   background: #3e5151; /* fallback for old browsers */
+  background: #3e5151; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
     #decba4,
     #3e5151
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #decba4,
-    #3e5151
-  ); 
+  background: linear-gradient(to right, #decba4, #3e5151);
   opacity: 0.8;
   padding-left: 0;
   padding: 1rem;
@@ -59,7 +55,6 @@ body {
   padding: calc((10% - 1.5rem) / 2);
 }
 
-
 .options {
   margin-top: calc((100vh - 6rem) / 2);
   width: 10%;
@@ -73,24 +68,38 @@ body {
   height: 2rem;
 }
 
-
-form{
+form {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-form input, form button{
+form input,
+form button {
   height: 100%;
 }
 
-form input{
+form input {
   width: 60%;
 }
 
-form button{
+form button {
   width: 19%;
 }
 
-.hide{
+.hide {
   display: none;
+}
+
+.list-title {
+  position: fixed;
+  color: white;
+  top: 0rem;
+  font-size: 2.5rem;
+}
+
+.lf-1 {
+  left: calc(55% + 4rem);
+}
+.lf-2 {
+  left: 4rem;
 }

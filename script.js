@@ -6,6 +6,7 @@ let searchBtn = document.querySelector(".search-btn");
 let l2 = document.querySelector(".l2");
 let l1List = document.querySelector(".l1 ul");
 let input = document.querySelector("input")
+let l1 = document.querySelector(".l1");
 
 addBtn.addEventListener("click", function () {
   let li = document.createElement("li");
@@ -101,6 +102,15 @@ l2.addEventListener("dragover", function (e) {
 });
 
 l2.addEventListener("drop", function (e) {
+  if (e.target == this.children[0])
+    e.target.append(document.getElementById(e.dataTransfer.getData("text")));
+});
+
+l1.addEventListener("dragover", function (e) {
+  e.preventDefault();
+});
+
+l1.addEventListener("drop", function (e) {
   if (e.target == this.children[0])
     e.target.append(document.getElementById(e.dataTransfer.getData("text")));
 });
