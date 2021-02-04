@@ -28,6 +28,7 @@ body {
 
 .l1 ul,
 .l2 ul {
+  overflow-y: auto;
    background: #3e5151; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -48,6 +49,7 @@ body {
 }
 .l1 ul li,
 .l2 ul li {
+  outline: none;
   background: white;
   width: 100%;
   text-align: center;
@@ -69,4 +71,26 @@ body {
 .moveBottom {
   width: 100%;
   height: 2rem;
+}
+
+
+form{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+form input, form button{
+  height: 100%;
+}
+
+form input{
+  width: 60%;
+}
+
+form button{
+  width: 19%;
+}
+
+.hide{
+  display: none;
 }
