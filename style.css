@@ -87,7 +87,7 @@ form input {
   width: 60%;
   outline: none;
     border: none;
-    height: 3rem;
+    height: 2rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
@@ -96,7 +96,7 @@ form input {
 form button {
   outline: none;
     border: none;
-    height: 3rem;
+    height: 2rem;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 5px;
@@ -116,7 +116,7 @@ form button {
 }
 
 .lf-1 {
-  left: calc(55% + 4rem);
+  left: calc(56% + 4rem);
 }
 .lf-2 {
   left: 4rem;
